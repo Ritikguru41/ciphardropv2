@@ -49,7 +49,7 @@ export default function Receiver({ onBack }) {
 
       console.log("Session OK!");
 
-      socketRef.current = io("http://localhost:5000", {
+      socketRef.current = io("https://ciphardropv2.onrender.com", {
         reconnection: true,
         reconnectionDelay: 1000,
         reconnectionDelayMax: 5000,
