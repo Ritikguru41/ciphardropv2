@@ -79,7 +79,7 @@ export default function Sender({ onBack, onSessionCreated, sessionCreatedAt }) {
       sentBytesRef.current = 0;
 
 
-      socketRef.current = io("http://localhost:5000");
+      socketRef.current = io("https://ciphardropv2.onrender.com");
       socketRef.current.emit("join-session", { code: sessionCode, role: "sender" });
 
 
